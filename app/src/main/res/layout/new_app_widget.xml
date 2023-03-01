@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     android:theme="@style/Theme.AppWidget.AppWidgetContainer">
 
-  <LinearLayout
+    <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:id="@+id/section_id"
       style="@style/AppWidgetLabel"
       android:layout_alignParentLeft="true"
@@ -29,6 +29,39 @@
           android:layout_weight="1"
           android:text="--"/>
 
-  </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sectiom_update"
+        style="@style/AppWidgetLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/section_id"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppWidgetLabel"
+            android:layout_marginBottom="2dp"
+            android:text="@string/widget_update_label"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appwidget_count"
+            style="@style/AppWidgetText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appwidget_update"
+            style="@style/AppWidgetText" />
+
+    </LinearLayout>
 
 </RelativeLayout>
